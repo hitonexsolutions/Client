@@ -185,7 +185,7 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form action="form.php" method="post">
+                    <form onsubmit="sendMail(); reset(); return false;">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <input type="text" class="form-control border-0 bg-light px-4" name="name" placeholder="Your Name" style="height: 55px;">
@@ -331,8 +331,25 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
+	
+	
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+	    function sendMail(){
+		Email.send({
+		    Host : "smtp.gmail.com",
+		    Username : "info@dubique.com",
+		    Password : "password",
+		    To : 'iyasiyasiyasiyasiyas05@gmail.com',
+		    From : doocument.getElementById("email"),
+		    Subject : doocument.getElementById("subject"),
+		    Body : doocument.getElementById("message"),
+		}).then(
+		  message => alert(message)
+		);
+	    }
+    </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
