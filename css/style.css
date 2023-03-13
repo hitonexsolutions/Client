@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
+    --primary: #b81c40 ;
     --secondary: #34AD54;
     --light: #EEF9FF;
-    --dark: #091E3E;
+    --dark: #0a0003;
 }
 
 
@@ -76,7 +76,12 @@ h6,
 .fw-medium {
     font-weight: 600 !important;
 }
-
+input[type="text"]:valid {
+    border-color:#0f0;
+}
+.validated input:invalid {
+    border-color:#f00;
+}
 
 /*** Button ***/
 .btn {
@@ -90,9 +95,37 @@ h6,
     color: #FFFFFF;
     box-shadow: inset 0 0 0 50px transparent;
 }
+.btn-danger{
+    border-color: #6c6c6c7f;
+    color: #fff;
+}
+.btn-danger:hover {
+    color: #710224;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    
+}
 
-.btn-primary:hover {
-    box-shadow: inset 0 0 0 0 var(--primary);
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px rgba(151, 0, 55, 0.153) inset !important;
+}
+
+.index-services:hover .servies-imgs{
+    background-color: #ff79791b;
+    transition: .5s;
+}
+.servies-imgs{
+    background-color: #b81c40;
+    transition: .5s;
+}
+
+.btn-outline-light:hover{
+    color: #710224;
+    background-color: #fff;
+    border-radius: 0.5rem;
 }
 
 .btn-secondary:hover {
@@ -313,41 +346,93 @@ h6,
 /*** Service ***/
 .service-item {
     position: relative;
-    height: 300px;
-    padding: 0 30px;
+    height: 420px;
+    padding: 30px 40px;
+    transition: .5s;
+    background-color: #fff7f9 ;
+    
+}
+
+.vendor-carousel img{
+    height: 100px;
+}
+.index-proccess{
+    transition: .5s;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.index-proccess h4{
+    transition: .5s;
+    color: var(--primary);
+}
+
+.index-proccess:hover{
+    background-color: var(--primary);
+    transition: .5s;
+    color: white;
+}
+
+.index-proccess:hover h4{
+    transition: .5s;
+    color: white;
+}
+
+
+.service-item:hover {
+    background-color: var(--primary);
+    color: #FFFFFF;
+    box-shadow: 0 0 30px #191919;
+    transition: .5s;
+}
+.price-div{
+    transition: .5s;
+    box-shadow: 0 0 30px #6161616a;
+    border-radius: .5rem;
+}
+.center-price{
+    background-color: #710224; z-index: 1; box-shadow: #710224;
+}
+
+.center-price:hover{
+    background-color: #c50035;
+}
+
+.price-div:hover{
+    transition: .5s;
+
+}
+
+.service-item:hover h4{
+    color: #FFFFFF;
+    transition: .5s;
+    
+}
+
+.service-item:hover p{
+    color: #FFFFFF;
+    transition: .5s;
+    
+}
+
+.service-item h4{
+    color:  var(--primary);
     transition: .5s;
 }
 
-.service-item .service-icon {
-    margin-bottom: 30px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary);
-    border-radius: 2px;
-    transform: rotate(-45deg);
+.service-item p{
+    color:  #d1cbcd;
+    transition: .5s;
 }
 
-.service-item .service-icon i {
-    transform: rotate(45deg);
-}
-
-.service-item a.btn {
-    position: absolute;
-    width: 60px;
-    bottom: -48px;
-    left: 50%;
-    margin-left: -30px;
+.service-item:hover #service-img{
     opacity: 0;
+    transition: 1s;
 }
 
-.service-item:hover a.btn {
-    bottom: -24px;
-    opacity: 1;
+#service-img{
+    transition: 1s;
 }
-
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-dots {
@@ -405,7 +490,7 @@ h6,
     transition: .5s;
 }
 
-.team-social a.btn {
+.team-social h5 {
     position: relative;
     margin: 0 3px;
     margin-top: 100px;
@@ -417,32 +502,15 @@ h6,
 }
 
 .team-item:hover .team-social {
-    background: rgba(9, 30, 62, .7);
-}
+    background: rgba(62, 9, 24, 0.7);
+}     
 
-.team-item:hover .team-social a.btn:first-child {
+.team-item:hover .team-social h5 {
     opacity: 1;
     margin-top: 0;
     transition: .3s 0s;
 }
-
-.team-item:hover .team-social a.btn:nth-child(2) {
-    opacity: 1;
-    margin-top: 0;
-    transition: .3s .05s;
-}
-
-.team-item:hover .team-social a.btn:nth-child(3) {
-    opacity: 1;
-    margin-top: 0;
-    transition: .3s .1s;
-}
-
-.team-item:hover .team-social a.btn:nth-child(4) {
-    opacity: 1;
-    margin-top: 0;
-    transition: .3s .15s;
-}
+     
 
 .team-item .team-img img,
 .blog-item .blog-img img  {
@@ -463,7 +531,11 @@ h6,
         z-index: 1;
     }
 }
-
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 .back-to-top {
     position: fixed;
     display: none;
@@ -472,8 +544,36 @@ h6,
     z-index: 99;
 }
 
+.bi-whatsapp{
+    color: #ffffff;
+    font-size: 2rem;
+    transition: .5s;
+    border-radius: .5rem;
+}
+.whatsapp-link:hover {
+    background-color: #fff;
+    transition: .5s;
+}
+.whatsapp-link:hover .bi-whatsapp{
+    color: #0b7b29;
+    transition: .5s;
+    
+}
+.whatsapp-link {
+    position: fixed;
+    left: 55px;
+    bottom: 55px;
+    z-index: 99;
+    border-radius: .5rem;
+    width: 45px;
+    height: 45px;
+    background-color: #0b7b29;
+    transition: .5s;
+    
+}
+
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), center center no-repeat;
     background-size: cover;
 }
 

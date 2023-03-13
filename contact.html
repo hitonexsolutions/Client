@@ -29,9 +29,21 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
+    
+    <!-- Designed By HITONEX SOLUTIONS from Perinthalmanna, Malappuram, Kerala-->
+    <!-- Designed By HITONEX SOLUTIONS from Perinthalmanna, Malappuram, Kerala-->
+    <!-- Designed By HITONEX SOLUTIONS from Perinthalmanna, Malappuram, Kerala-->
+    <!-- Designed By HITONEX SOLUTIONS from Perinthalmanna, Malappuram, Kerala-->
+    <!-- Designed By HITONEX SOLUTIONS from Perinthalmanna, Malappuram, Kerala-->
+    <!-- Designed By HITONEX SOLUTIONS from Perinthalmanna, Malappuram, Kerala-->
+    <!-- Designed By HITONEX SOLUTIONS from Perinthalmanna, Malappuram, Kerala-->
+    <!-- Designed By HITONEX SOLUTIONS from Perinthalmanna, Malappuram, Kerala-->
+
+    
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
@@ -40,13 +52,12 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #710224;">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone me-2"></i>+971 5022 71262</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@dubique.com</small>
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
@@ -65,7 +76,7 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0" style="border: none;">
             <a href="index.html" class="navbar-brand p-0">
                 <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
             </a>
@@ -77,20 +88,17 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="contact.html" class="nav-item nav-link">Business Setup</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="business-setup.html" class="nav-item nav-link ">Business Setup</a>
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
                 </div>
-                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#get-a-Quote"><i class="fa fa-search"></i></butaton>
-                <a href="quote.html" class="btn btn-primary py-2 px-4 ms-3">GET A QUOTE</a>
+                <button type="button" class="btn btn-danger py-2 px-4 ms-3" data-bs-toggle="modal" data-bs-target="#get-a-Quote">GET A QUOTE</button>
             </div>
         </nav>
-        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="container-fluid bg-primary py-5 bg-header" style="background-image: url(img/contact-banner.jpg); margin-bottom: 90px;">
             <div class="row py-5">
                 <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    
                     <h1 class="display-4 text-white animated zoomIn">Contact Us</h1>
-                    <a href="" class="h5 text-white">Home</a>
-                    <i class="far fa-circle text-white px-2"></i>
-                    <a href="" class="h5 text-white">Contact</a>
                 </div>
             </div>
         </div>
@@ -98,37 +106,44 @@
     <!-- Navbar End -->
 
 
-    <!-- Full Screen GET A QUOTE Start -->
-    <div class="modal fade" id="get-a-Quote" tabindex="-1">
+   <!-- Full Screen GET A QUOTE Start -->
+    <div class="modal fade" id="get-a-Quote"  tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+            <div class="modal-content" style="background: #fbabbf17 !important;">
                 <div class="modal-header border-0">
                     <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body d-flex align-items-center justify-content-center">
                     <div class="col-lg-4">
                         <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                            <form>
+                            <form id="get-a-Quote-form" action="">
                                 <div class="row g-3">
                                     <div class="col-xl-12">
-                                        <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                        <input type="text" class="form-control bg-light border-0" name="name" placeholder="Your Name" style="height: 55px;" required>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <input type="number" class="form-control bg-light border-0" name="phone" placeholder="Phone Number" style="height: 55px;" required>
                                     </div>
                                     <div class="col-12">
-                                        <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                        <input type="email" class="form-control bg-light border-0" name="email" placeholder="Your Email" style="height: 55px;" required>
                                     </div>
                                     <div class="col-12">
-                                        <select class="form-select bg-light border-0" style="height: 55px;">
-                                            <option selected>Select A Service</option>
-                                            <option value="1">Service 1</option>
-                                            <option value="2">Service 2</option>
-                                            <option value="3">Service 3</option>
+                                        <select class="form-select bg-light border-0" name="Selector" style="height: 55px;" required>
+                                            <option value="Business Activity" selected>Business Activity</option>
+                                            <option value="Technical Services">Technical Services</option>
+                                            <option value="Delivery Services">Delivery Services</option>
+                                            <option value="Project Management">Project Management</option>
+                                            <option value="General Trading">General Trading</option>
+                                            <option value="Building Material Trading">Building Material Trading</option>
+                                            <option value="Real Estate">Real Estate</option>
+                                            <option value="Other">Other</option>
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
+                                        <textarea class="form-control bg-light border-0" name="message" rows="3" placeholder="Message" required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
+                                        <button class="btn btn-danger w-100 py-3" type="submit">Request A Quote</button>
                                     </div>
                                 </div>
                             </form>
@@ -156,7 +171,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                            <h4 class="text-primary mb-0">+971 5022 71262</h4>
                         </div>
                     </div>
                 </div>
@@ -167,7 +182,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Email to get free quote</h5>
-                            <h4 class="text-primary mb-0">info@example.com</h4>
+                            <h4 class="text-primary mb-0">info@dubique.com</h4>
                         </div>
                     </div>
                 </div>
@@ -178,38 +193,37 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Visit our office</h5>
-                            <h4 class="text-primary mb-0">123 Street, NY, USA</h4>
+                            <h4 class="text-primary mb-0">211 -Arzoo building , Al qusais  </h4>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form onsubmit="sendMail(); reset(); return false;">
+                    <form action="" id="Contact-form">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" name="name" placeholder="Your Name" style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" name="name" placeholder="Your Name" style="height: 55px;" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" name="email" placeholder="Your Email" style="height: 55px;">
+                                <input type="email" class="form-control border-0 bg-light px-4" name="email" placeholder="Your Email" style="height: 55px;" required>
                             </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" name="subject" placeholder="Subject" style="height: 55px;">
+                            <div class="col-xl-12">
+                                <input type="number" class="form-control bg-light border-0" name="phone" placeholder="Phone Number" style="height: 55px;" required>
                             </div>
+                            
                             <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" name="message" rows="4" placeholder="Message"></textarea>
+                                <textarea class="form-control border-0 bg-light px-4 py-3" name="message" rows="4" placeholder="Message" required></textarea>
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            <div class="col-12 ">
+                                <button class="btn btn-danger py-3 px-5 w-100" type="submit" >Submit</button>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
-                    <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                    <iframe class="position-relative rounded w-100 h-100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Arzoo%20Building%20%2CNext%20to%20Al%20Tawar%20Center%20Second%20Floor%2C%20Office%20Number%20211%20Al%20Qusais%20Dubai%20UAE&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" title="Arzoo Building , Second Floor, Office Number 211 Al Qusais Dubai UAE" aria-label="Arzoo Building , Second Floor, Office Number 211 Al Qusais Dubai UAE"></iframe>
+                    
                 </div>
             </div>
         </div>
@@ -219,6 +233,13 @@
 
     <!-- Vendor Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class=" text-center align-items-center justify-content-center d-flex">
+
+            <div class="col-md-6  position-relative pb-3 mb-5">
+                <h1 class="mb-0">We Work Closely With All Government Agencies</h1>
+                <p class="text-center ">A mainland company is an onshore company licensed by the Department of Economic Development (DED) of the related emirate which is allowed to do business in the local market as well as outside UAE without any restriction.</p>
+            </div>
+        </div>
         <div class="container py-5 mb-5">
             <div class="bg-white">
                 <div class="owl-carousel vendor-carousel">
@@ -230,7 +251,6 @@
                     <img src="img/vendor-6.jpg" alt="">
                     <img src="img/vendor-7.jpg" alt="">
                     <img src="img/vendor-8.jpg" alt="">
-                    <img src="img/vendor-9.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -238,22 +258,19 @@
     <!-- Vendor End -->
     
 
-    <!-- Footer Start -->
+       <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                <div class="col-lg-4 col-md-6 footer-about" >
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100  p-4"style="background-color: #710224;">
                         <a href="index.html" class="navbar-brand">
                             <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Startup</h1>
                         </a>
-                        <p class="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                                <button class="btn btn-dark">Sign Up</button>
-                            </div>
-                        </form>
+                        <p class="mt-3 mb-4">Starting a company/business in Dubai with Dubai Business Setup is simple and time-saving. We help you set up a mainland, offshore and Free Zone Company.</p>
+                        <div class="col-12">
+                            <a href="quote.html" class="btn btn-danger w-100 py-3" >Request A Quote</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-6">
@@ -264,21 +281,23 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">123 Street, New York, USA</p>
+                                <p class="mb-0">211 -Arzoo building 
+, Al qusais  
+</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">info@dubique.com</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+012 345 67890</p>
+                                <p class="mb-0">+971 5022 712620</p>
                             </div>
                             <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-danger btn-square me-2" href="#"><i class="bi bi-twitter fw-normal"></i></a>
+                                <a class="btn btn-danger btn-square me-2" href="#"><i class="bi bi-facebook fw-normal"></i></a>
+                                <a class="btn btn-danger btn-square me-2" href="#"><i class="bi bi-linkedin fw-normal"></i></a>
+                                <a class="btn btn-danger btn-square" href="#"><i class="bi bi-instagram fw-normal"></i></a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
@@ -287,24 +306,19 @@
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
                                 <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="business-setup.html"><i class="bi bi-arrow-right text-primary me-2"></i>Business Setup</a>
+                                
+                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            
+                            <div class="link-animated mt-5 pt-4 d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="https://www.privacypolicygenerator.info/live.php?token=CFhneBCU8siN8eCWi1gmH8xzWbDWrs9x"><i class="bi bi-arrow-right text-primary me-2"></i>Privacy Policy </a>
+                                <a class="text-light mb-2" href="https://www.termsandconditionsgenerator.com/live.php?token=ZNEIdhuI2hXwC8xlEeFob2S3i9qtpmmz"><i class="bi bi-arrow-right text-primary me-2"></i>Terms & Conditions</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -312,15 +326,14 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid text-white" style="background: #061429;">
+    <div class="container-fluid text-white" style="background: #710224;">
         <div class="container text-center">
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
                         <p class="mb-0">&copy; <a class="text-white border-bottom" href="https://dubique.com">Dubique</a>. All Rights Reserved. 
 						
-						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HITONEX</a></p>
+						
                     </div>
                 </div>
             </div>
@@ -330,27 +343,49 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-	
-	
-    
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-	    function sendMail(){
-		Email.send({
-		    Host : "smtp.gmail.com",
-		    Username : "info@dubique.com",
-		    Password : "password",
-		    To : 'iyasiyasiyasiyasiyas05@gmail.com',
-		    From : doocument.getElementById("email"),
-		    Subject : doocument.getElementById("subject"),
-		    Body : doocument.getElementById("message"),
-		}).then(
-		  message => alert(message)
-		);
-	    }
-    </script>
+    <a href="#" class="btn btn-lg btn-danger btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i> </a>
+    <a 
+href="https://wa.me/+971502271262/?text=Hi%21%0D%0AAnyone+available+here+for+chat%3F" class=" p-0 m-0 btn-lg-square whatsapp-link" title="Whatsapp Us"><i class="bi bi-whatsapp"></i></a>
+
     <!-- JavaScript Libraries -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("#get-a-Quote-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzD7h-hFH2zONFEJtEXz0BcwDmrmmURBI2ghWYMpeOThFAGLBZldEzGeArdQxg70eo_Yw/exec",
+                data:$("#get-a-Quote-form").serialize(),
+                method:"post",
+                success:function (response){
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+    <script>
+        $("#Contact-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyifRUJ_0DJcTqv9LKmuKrUoGjYW370CQjqVJ8L2lpmsDqhLaoxzotVgQQbDg33CGJ0/exec",
+                data:$("#Contact-form").serialize(),
+                method:"post",
+                success:function (response){
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
