@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+
 :root {
     --primary: #b81c40 ;
     --secondary: #34AD54;
@@ -9,9 +10,9 @@
 
 /*** Spinner ***/
 .spinner {
-    width: 40px;
-    height: 40px;
-    background: var(--primary);
+    width: 150px;
+    height: 150px;
+    background: #00000000;
     margin: 100px auto;
     -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
     animation: sk-rotateplane 1.2s infinite ease-in-out;
@@ -22,26 +23,326 @@
         -webkit-transform: perspective(120px)
     }
     50% {
-        -webkit-transform: perspective(120px) rotateY(180deg)
+        -webkit-transform: perspective(120px) rotateX(180deg)
     }
     100% {
-        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+        -webkit-transform: perspective(120px) rotateX(180deg) rotateX(180deg)
     }
 }
 
 @keyframes sk-rotateplane {
     0% {
-        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+        transform: perspective(120px) rotateY(0deg) rotateX(0deg);
+        -webkit-transform: perspective(120px) rotateY(0deg) rotateX(0deg)
     }
     50% {
-        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+        transform: perspective(120px) rotateY(-180.1deg) rotateX(0deg);
+        -webkit-transform: perspective(120px) rotateY(-180.1deg) rotateX(0deg)
     }
     100% {
-        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        transform: perspective(120px) rotateY(-180deg) rotateX(-179.9deg);
+        -webkit-transform: perspective(120px) rotateY(-180deg) rotateX(-179.9deg);
     }
+}
+
+#myCarousel {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+  }
+  .carousel-item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1.3s;
+    opacity: 0;
+  }
+  
+
+
+
+
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    width: 50%;
+    padding: 20px;
+  }
+.carousel-img{
+    width: 100%;
+    height: 100%;
+}  
+
+.c-2-btn{
+    background-color: #907b7b00;
+    border: 1px solid #710224;
+    color: white;
+    transition: .5s;
+}
+
+.c-2-btn:hover{
+    border: none;
+    color: #710224;
+    transition: .5s;
+}
+.c-h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: #710224;
+}
+
+@media (max-width: 767.98px) {
+    .c-h2 {
+        font-size: 40px;
+       
+    }
+    .carousel-caption{
+        width: 100%;
+    }
+    .navbar{
+        padding: 0px;
+        padding: 0px;
+    }
+    .c-2-btn{
+        margin-top: 15px
+    }
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  position: relative;
+  width: calc(min(90rem, 90%));
+  margin: 0 auto;
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+}
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -3rem;
+  z-index: -1;
+  width: 9.375rem;
+  opacity: 0;
+}
+
+@media (max-width:776px){
+    .navbar-collapse{
+        z-index: 99;
+        background-color: white;
+        padding: 20px;
+    }
+
+}
+
+main > div span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #717171;
+}
+
+main > div h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000000);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+main > div hr {
+  display: block;
+  background: #005baa;
+  height: 0.25rem;
+  width: 6.25rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+main > div p {
+  line-height: 1.6;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 3.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+main > div > a {
+  border: 2px solid #c2c2c2;
+  margin-top: 2.188rem;
+  padding: 0.625rem 1.875rem;
+}
+
+main > div > a:hover {
+  border: 0.125rem solid #005baa;
+  color: #005baa;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: #dadada;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide a:hover {
+  color: #005baa;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://images.unsplash.com/photo-1628944682084-831f35256163?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://images.unsplash.com/photo-1515309025403-4b0184873cef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://images.unsplash.com/photo-1570481662006-a3a1374699e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+  .bg,
+  .bg2 {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
 }
 
 #spinner {
@@ -157,6 +458,12 @@ input:-webkit-autofill:active  {
 
 
 /*** Navbar ***/
+.navbar-dark{
+    height: 80px;
+}
+.nav-logo{
+    height: 60px;
+}
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
     position: relative;
@@ -247,39 +554,6 @@ input:-webkit-autofill:active  {
     }
 }
 
-
-/*** Carousel ***/
-.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(9, 30, 62, .7);
-    z-index: 1;
-}
-
-@media (max-width: 576px) {
-    .carousel-caption h5 {
-        font-size: 14px;
-        font-weight: 500 !important;
-    }
-
-    .carousel-caption h1 {
-        font-size: 30px;
-        font-weight: 600 !important;
-    }
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
-}
 
 
 /*** Section Title ***/
@@ -561,8 +835,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .whatsapp-link {
     position: fixed;
-    left: 55px;
-    bottom: 55px;
+    right: 45px;
+    bottom: 105px;
     z-index: 99;
     border-radius: .5rem;
     width: 45px;
@@ -590,3 +864,139 @@ input[type="number"]::-webkit-outer-spin-button {
         margin-bottom: -75px;
     }
 }
+#chat-box{position:fixed;z-index: 1; right:-500px;bottom:17%;width:320px;height:200px;transition:all .5s; margin-bottom: 40px;margin-right: -70px;}
+@media (max-width: 767.98px) {
+    #chat-box {
+        margin-right: 0px;
+       
+    }
+}
+
+#chat-top{width:100%;z-index: 100; line-height:2;background-color:#075e54;color:white;text-align:center;border-radius:5px 5px 0 0;padding:0 10px;padding-top:5px;}
+#chat-msg{ background:#ece5dd;
+    position: relative;
+    padding:20px;border-radius:0 0 5px 5px;box-shadow:0 0 25px -10px #999;}
+#chat-msg .c-msg{font-size:14px;padding:5px;background:white;border-radius:0 50px 50px 50px;margin-bottom:10px;}
+#chat-form{display:flex;}
+.chat-in{width:80%;}
+#chat-form input{border-radius:5px 0 5px 5px;width:100%;border:none;outline:none;font-size:14px;padding:5px;line-height:2;}
+#send-btn{width:20%;padding: 0 5px;}
+#send-btn:hover{
+    cursor: pointer;
+}
+#chat-top-right{float:right;padding:5px 0;}
+
+.right{float:right}
+.clear{clear:both}
+
+ 
+
+#alert {
+    position: absolute;
+    background-color: #ff0400e3;
+    width: 280px;
+    color: white;
+    display: none;
+    font-size:14px;
+    padding:10px;
+    border-radius:0 50px 50px 50px;
+    margin-bottom:10px;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+  
+
+
+  #why-choose-us {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+  }
+  
+  #why-choose-us h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+  }
+  
+  .icon-box {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    animation-name: slide-up;
+    animation-duration: 1s;
+  }
+  
+  .icon-box i {
+    font-size: 48px;
+    color: #b81c40;
+    margin-bottom: 20px;
+  }
+
+  .icon-box:hover img{
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .icon-box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .icon-box p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #777777;
+  }
+  
+  .icon-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icon-box:hover:before {
+    left: 0;
+  }
+  
+  @keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes slide-up {
+    from {transform: translateY(50px);}
+    to {transform: translateY(0);}
+  }
+  
+  @keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  

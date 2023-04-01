@@ -1,3 +1,45 @@
+page = document.getElementById('index-page').value
+if (page == 'index'){
+    const carouselItems = document.querySelectorAll('.carousel-item');
+let currentSlide = 0;
+
+
+
+// Show the first slide and caption
+carouselItems[currentSlide].classList.add('active');
+
+// Function to advance to the next slide
+function nextSlide() {
+  // Hide the current slide and caption
+  carouselItems[currentSlide].classList.remove('active');
+  // Increment the current slide index
+  currentSlide++;
+  // If we've gone beyond the last slide, start over at the beginning
+  if (currentSlide >= carouselItems.length) {
+    currentSlide = 0;
+  }
+  // Show the next slide and caption
+  carouselItems[currentSlide].classList.add('active');
+}
+
+// Function to go back to the previous slide
+function prevSlide() {
+  // Hide the current slide and caption
+  carouselItems[currentSlide].classList.remove('active');
+  // Decrement the current slide index
+  currentSlide--;
+  // If we've gone beyond the first slide, go to the last slide
+  if (currentSlide < 0) {
+    currentSlide = carouselItems.length - 1;
+  }
+  // Show the previous slide and caption
+  carouselItems[currentSlide].classList.add('active');
+}
+
+// Set up the automatic animation
+let autoSlide = setInterval(nextSlide, 6000);
+
+}
 (function ($) {
     "use strict";
 
@@ -7,7 +49,7 @@
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 1);
+        }, 1.2);
     };
     spinner();
     
@@ -123,4 +165,42 @@
     });
     
 })(jQuery);
+
+
+document.getElementById('whats-chat').addEventListener("mouseover", showchatbox);
+document.getElementById('chat-top-right').addEventListener("click", closechatbox);
+document.getElementById('send-btn').addEventListener("click", sendmsg);
+window.addEventListener("load", showchatboxtime);
+function showchatbox(){
+document.getElementById('chat-box').style.right='8%'
+}
+function closechatbox(){
+document.getElementById('chat-box').style.right='-500px'
+
+
+}
+function showchatboxtime(){
+setTimeout(launchbox,5000)
+}
+function launchbox(){
+document.getElementById('chat-box').style.right='8%'
+
+}
+function sendmsg(){
+var msg = document.getElementById('whats-in');
+console.log(msg);
+if (msg == null || msg.value == ""){
+    document.getElementById('alert').style.display = "block"
+    
+}
+else{
+    var relmsg = msg.value.replace(/ /g,"%20");
+    window.open('https://api.whatsapp.com/send?phone=971502271262&text='+relmsg,'_blank');
+}
+
+}
+
+
+
+
 
