@@ -53,7 +53,7 @@
   }
   .carousel-item {
     position: absolute;
-    display: inline-block;
+    display: none;
     top: 0;
     left: 0;
     width: 100%;
@@ -69,6 +69,7 @@
   
   .carousel-item.active {
     opacity: 1;
+    display: block;
   }
   .carousel-caption {
     position: absolute;
