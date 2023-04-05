@@ -1,9 +1,10 @@
-page = document.getElementById('index-page').value
+page = document.getElementById('index-page').value;
 if (page == 'index'){
-    const carouselItems = document.querySelectorAll('.carousel-item');
+
+const carouselItems = document.querySelectorAll('.carousel-item');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 let currentSlide = 0;
-
-
 
 // Show the first slide and caption
 carouselItems[currentSlide].classList.add('active');
@@ -37,9 +38,24 @@ function prevSlide() {
 }
 
 // Set up the automatic animation
-let autoSlide = setInterval(nextSlide, 6000);
+let autoSlide = setInterval(nextSlide, 5000);
+
+// Pause the automatic animation when the user clicks a button
+prevBtn.addEventListener('click', function() {
+  clearInterval(autoSlide);
+  prevSlide();
+  autoSlide = setInterval(nextSlide, 5000);
+});
+
+nextBtn.addEventListener('click', function() {
+  clearInterval(autoSlide);
+  nextSlide();
+  autoSlide = setInterval(nextSlide, 5000);
+});
 
 }
+
+
 (function ($) {
     "use strict";
 
