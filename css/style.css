@@ -102,7 +102,7 @@
     transition: .5s;
 }
 .c-h2{
-    font-family: 'Montserrat',sans-serif;
+    font-family: century-gothic, sans-serif;
     font-size: 70px;
     color: #bb1d4c;
 }
@@ -170,7 +170,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-zize:19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
@@ -427,7 +428,7 @@ input[type="text"]:valid {
 
 /*** Button ***/
 .btn {
-    font-family: 'Nunito', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -512,13 +513,13 @@ input:-webkit-autofill:active  {
     height: 80px;
 }
 .navbar-dark .navbar-nav .nav-link {
-    font-family: 'Nunito', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
     color: #ffffff;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     outline: none;
     transition: .5s;
 }
