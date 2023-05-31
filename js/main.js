@@ -78,8 +78,10 @@ nextBtn.addEventListener('click', function() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
+            $('.nav-link-color').removeClass('text-white');
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
+            $('.nav-link-color').addClass('text-white');
         }
     });
     
@@ -159,11 +161,11 @@ nextBtn.addEventListener('click', function() {
     // Vendor carousel
     $('.vendor-carousel').owlCarousel({
         loop: true,
-        margin: 45,
+        margin: 0,
         dots: false,
         loop: true,
         autoplay: true,
-        smartSpeed: 1000,
+        smartSpeed: 500,
         responsive: {
             0:{
                 items:2
@@ -175,7 +177,7 @@ nextBtn.addEventListener('click', function() {
                 items:6
             },
             992:{
-                items:8
+                items:6
             }
         }
     });

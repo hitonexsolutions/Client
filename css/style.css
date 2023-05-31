@@ -506,7 +506,7 @@ input:-webkit-autofill:active  {
 
 /*** Navbar ***/
 .navbar-dark{
-    height: 80px;
+    height: 90px;
 }
 .nav-logo{
     height: 60px;
@@ -516,7 +516,7 @@ input:-webkit-autofill:active  {
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
-    color: #1d1d1d;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 600;
     outline: none;
@@ -675,7 +675,8 @@ input:-webkit-autofill:active  {
 }
 
 .vendor-carousel img{
-    height: 100px;
+    height: 150px;
+    width: 100%;
 }
 .index-proccess{
     transition: .5s;
