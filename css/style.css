@@ -712,7 +712,7 @@ input:-webkit-autofill:active  {
     transition: .5s;
     box-shadow: 0 0 30px #6161616a;
     border-radius: .5rem;
-    height: 850px;
+    height: 700px;
 }
 .center-price{
     background-color: #710224; z-index: 1; box-shadow: #710224;
