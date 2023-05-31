@@ -517,6 +517,13 @@ input:-webkit-autofill:active  {
 .nav-logo{
     height: 80px;
 }
+
+@media (max-width: 991.98px) {
+    .nav-logo{
+        height: 60px;
+    }
+}
+
 .navbar-dark .navbar-nav .nav-link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
