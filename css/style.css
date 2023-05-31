@@ -573,6 +573,11 @@ input:-webkit-autofill:active  {
     }
 }
 
+@media (max-width: 992px) {
+    .nav-link-color{
+        color:black;
+        }
+    }
 @media (min-width: 992px) {
     .navbar-dark {
         position: absolute;
