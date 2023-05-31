@@ -862,14 +862,14 @@ input[type="number"]::-webkit-outer-spin-button {
 .back-to-top {
     position: fixed;
     display: none;
-    right: 45px;
+    left: 45px;
     bottom: 45px;
     z-index: 99;
 }
 
 .bi-whatsapp{
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: .5s;
     border-radius: .5rem;
 }
@@ -885,7 +885,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .whatsapp-link {
     position: fixed;
     right: 45px;
-    bottom: 105px;
+    bottom: 45px;
     z-index: 99;
     border-radius: .5rem;
     width: 45px;
@@ -913,7 +913,7 @@ input[type="number"]::-webkit-outer-spin-button {
         margin-bottom: -75px;
     }
 }
-#chat-box{position:fixed;z-index: 1; right:-500px;bottom:17%;width:320px;height:200px;transition:all .5s; margin-bottom: 40px;margin-right: -70px;}
+#chat-box{position:fixed;z-index: 1; right:-500px;bottom:60px;width:320px;height:200px;transition:all .5s; margin-bottom: 40px;margin-right: -70px;}
 @media (max-width: 767.98px) {
     #chat-box {
         margin-right: 0px;
