@@ -205,7 +205,7 @@ main {
   opacity: 0;
 }
 
-@media (max-width:776px){
+@media (max-width:991px){
     .navbar-collapse{
         z-index: 99;
         background-color: white;
