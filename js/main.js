@@ -78,10 +78,10 @@ nextBtn.addEventListener('click', function() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
-            $('.nav-link-color').removeClass('text-white');
+            $('.nav-link-color').style.color="black";
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
-            $('.nav-link-color').addClass('text-white');
+            $('.nav-link-color').style.color="white";
         }
     });
     
