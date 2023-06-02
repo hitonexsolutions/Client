@@ -38,19 +38,19 @@ function prevSlide() {
 }
 
 // Set up the automatic animation
-let autoSlide = setInterval(nextSlide, 5000);
+let autoSlide = setInterval(nextSlide, 7000);
 
 // Pause the automatic animation when the user clicks a button
 prevBtn.addEventListener('click', function() {
   clearInterval(autoSlide);
   prevSlide();
-  autoSlide = setInterval(nextSlide, 5000);
+  autoSlide = setInterval(nextSlide, 7000);
 });
 
 nextBtn.addEventListener('click', function() {
   clearInterval(autoSlide);
   nextSlide();
-  autoSlide = setInterval(nextSlide, 5000);
+  autoSlide = setInterval(nextSlide, 7000);
 });
 
 }
