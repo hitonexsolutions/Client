@@ -172,6 +172,13 @@
 .carousel-caption a{
     color:white;
 }
+.carousel-caption-left{
+    left:100px;
+    text-align:left;
+}
+@media (max-width: 991.98px) {
+    left:30px;
+}
 #prevBtn,
 #nextBtn {
   position: absolute;
