@@ -177,7 +177,10 @@
     text-align:left;
 }
 @media (max-width: 991.98px) {
-    left:30px;
+    .carousel-caption-left{
+        left:30px;
+        
+    }
 }
 #prevBtn,
 #nextBtn {
