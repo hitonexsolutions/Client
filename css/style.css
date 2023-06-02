@@ -179,7 +179,7 @@
 @media (max-width: 991.98px) {
     .carousel-caption-left{
         left:30px;
-        
+        width:100%
     }
 }
 #prevBtn,
