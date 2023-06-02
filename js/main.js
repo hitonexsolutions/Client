@@ -198,7 +198,7 @@ document.getElementById('chat-box').style.right='-500px'
 
 }
 function showchatboxtime(){
-setTimeout(launchbox,5000)
+setTimeout(launchbox,8000)
 }
 function launchbox(){
 document.getElementById('chat-box').style.right='8%'
