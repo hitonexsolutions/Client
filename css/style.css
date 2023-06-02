@@ -80,8 +80,7 @@
   }
   @media (min-width:991px) {
     .carousel-caption {
-      right: 10px;
-        width:100%
+      right: 100px;
     }
   }
   
