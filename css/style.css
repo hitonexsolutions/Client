@@ -145,9 +145,10 @@
     transition: .5s;
 }
 .c-h2{
-    font-family: century-gothic, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 50px;
-    color: #bb1d4c;
+    color: #000000;
+    font-style: inherit;
 }
 
 @media (max-width: 767.98px) {
@@ -166,21 +167,7 @@
         margin-top: 15px
     }
 }
-.carousel-caption p{
-    color:white;
-}
-.carousel-caption a{
-    color:white;
-}
-.carousel-caption-left{
-    left:100px;
-    text-align:left;
-}
-@media (max-width: 991px) {
-    .carousel-caption-left{
-        left:30px;
-    }
-}
+
 #prevBtn,
 #nextBtn {
   position: absolute;
@@ -227,7 +214,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-zize:19px;
+  font-size: 19px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -569,13 +556,11 @@ input:-webkit-autofill:active  {
 .nav-logo{
     height: 80px;
 }
-
 @media (max-width: 991.98px) {
     .nav-logo{
         height: 60px;
     }
 }
-
 .navbar-dark .navbar-nav .nav-link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
@@ -625,11 +610,6 @@ input:-webkit-autofill:active  {
     }
 }
 
-@media (max-width: 992px) {
-    .nav-link-color{
-        color:black;
-        }
-    }
 @media (min-width: 992px) {
     .navbar-dark {
         position: absolute;
@@ -737,7 +717,7 @@ input:-webkit-autofill:active  {
 /*** Service ***/
 .service-item {
     position: relative;
-    height: 420px;
+    height: 100%;
     padding: 30px 40px;
     transition: .5s;
     background-color: #fff7f9 ;
@@ -781,7 +761,7 @@ input:-webkit-autofill:active  {
     transition: .5s;
     box-shadow: 0 0 30px #6161616a;
     border-radius: .5rem;
-    height: 700px;
+    height: 850px;
 }
 .center-price{
     background-color: #710224; z-index: 1; box-shadow: #710224;
@@ -939,7 +919,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .bi-whatsapp{
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: .5s;
     border-radius: .5rem;
 }
@@ -1118,6 +1098,7 @@ input[type="number"]::-webkit-outer-spin-button {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
   }
+  
 
 
 
@@ -1142,4 +1123,5 @@ input[type="number"]::-webkit-outer-spin-button {
   .slider-text:nth-child(2) {
       animation: scrollTextEnd 20s infinite linear;
   }
+
   
