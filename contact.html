@@ -452,7 +452,7 @@ $("#Contact-form").submit((e)=>{
             document.getElementById('loading-button-page').style.display="block"
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbzD7h-hFH2zONFEJtEXz0BcwDmrmmURBI2ghWYMpeOThFAGLBZldEzGeArdQxg70eo_Yw/exec",
-                data:$("#get-a-Quote-form").serialize(),
+                data:$("#Contact-form").serialize(),
                 method:"post",
                 success:function (response){
                     window.location.reload()
