@@ -724,6 +724,18 @@ input:-webkit-autofill:active  {
     0% {left: 0; } 50% { left : 85px; } 100% { left: 0; }
 }
 
+@media (max-width:991px){
+  .navbar-collapse{
+      z-index: 99;
+      background-color: white;
+      padding: 20px;
+  }
+  .nav-logo{
+    height: 50px;
+}
+
+}
+
 
 /*** Service ***/
 .service-item {
