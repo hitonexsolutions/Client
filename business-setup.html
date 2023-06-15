@@ -113,30 +113,30 @@
     <!-- Navbar End -->
 
 
-   <!-- Full Screen GET A QUOTE Start -->
+  <!-- Full Screen GET A QUOTE Start -->
     <div class="modal fade" id="get-a-Quote"  tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content" style="background: #fbabbf17 !important;">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
                 <div class="modal-body d-flex align-items-center justify-content-center">
                     <div class="col-lg-4">
-                        <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                             <form id="get-a-Quote-form" action="">
+                        <div class="bg-primary rounded h-100 d-flex p-5 wow zoomIn">
+                            <form id="get-a-Quote-form" action="">
+                                <div class="modal-header border-0" style="top: 0px;">
+                                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
                                 <div id="null-field" style="visibility: hidden; opacity: 0; color: aliceblue;transition:visibility 1.5s linear,opacity 1.5s linear;" class="alert"></div>
                                 <div class="row g-3">
                                     <div class="col-xl-12">
-                                        <input id="name" type="text" class="form-control bg-light border-0" name="name" placeholder="Your Name" style="height: 55px;" >
+                                        <input type="text" class="form-control bg-light border-0" id="name" name="name" placeholder="Your Name" style="height: 55px;" >
                                     </div>
                                     <div class="col-xl-12">
-                                        <input id="phone" type="number" class="form-control bg-light border-0" name="phone" placeholder="Phone Number" style="height: 55px;" >
+                                        <input type="number" class="form-control bg-light border-0" id="phone" name="phone" placeholder="Phone Number" style="height: 55px;" >
                                     </div>
                                     <div class="col-12">
-                                        <input id="email" type="email" class="form-control bg-light border-0" name="email" placeholder="Your Email" style="height: 55px;" >
+                                        <input type="text" class="form-control bg-light border-0" id="email" name="email" placeholder="Your Email" style="height: 55px;" >
                                     </div>
                                     <div class="col-12">
-                                        <select class="form-select bg-light border-0" name="Selector" style="height: 55px;" >
+                                        <select class="form-select bg-light border-0" id="Selector" name="Selector" style="height: 55px;" >
                                             <option value="Business Activity" selected>Business Activity</option>
                                             <option value="Technical Services">Technical Services</option>
                                             <option value="Delivery Services">Delivery Services</option>
@@ -148,7 +148,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control bg-light border-0" name="message" rows="3" placeholder="Message" ></textarea>
+                                        <textarea class="form-control bg-light border-0" id="message" name="message" rows="3" placeholder="Message" ></textarea>
                                     </div>
                                     <div class="col-12">
                                         <button class="btn btn-danger w-100 py-3" type="submit"><i id="loading-button" style="margin: 0px 10px;float:left;display: none;" class="fa fa-circle-o-notch fa-spin"></i>Request A Quote</button>
